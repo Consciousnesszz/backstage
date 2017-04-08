@@ -1,0 +1,196 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body,div,p,ul,ol,li,dl,dd,dt,h1,h2,h3,h4,h5,h6,form,fieldset,legend,input{
+	margin:0; padding:0; font:12px "微软雅黑"; color: #333;
+	}
+html,body{
+	height:100%;
+}
+a{
+	text-decoration:none;
+	}
+li{
+	list-style:none;
+	}
+img{
+	border:0;
+	}
+
+/*----------------------login-------------------------*/
+
+.container{
+	width: 500px;
+	padding: 40px 20px;
+	margin: 0 auto;
+	background: #f1f1f1;
+	margin-top: 100px;
+	border: 1px solid #999;
+	border-radius: 2px;
+}
+.container .login{
+	width: 300px;
+	margin: 0 auto;
+}
+.container .login h3{
+	font-size: 22px;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+.container .login p{
+	margin-top: 20px;
+	width: 100%;
+	height: 40px;
+	border: 1px solid #fc0;
+	background: #e30;
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+	font-size: 14px;
+}
+.container .login .inp{
+	width: 300px;
+	height: 30px;
+	font-size: 18px;
+	line-height: 30px;
+	margin-top: 20px;
+	text-indent: 10px;
+}
+.container .login .fill{
+	border: 1px solid #0c0;
+}
+.container .login .notfill{
+	border: 1px solid #c00;
+}
+.container .login .keep{
+	width: 100%;
+	height: 20px;
+	margin-top: 30px;
+}
+.container .login .keep span{
+	padding-left: 10px;
+}
+.container .login a{
+	margin-top: 10px;
+	display: block;
+	width: 300px;
+	height: 30px;
+	font-size: 18px;
+	line-height: 30px;
+	text-align: center;
+	background: #ccc;
+	color: #fff;
+}
+
+/*-----------------------main---------------------------*/
+
+.main{
+	width: 1000px;
+	margin: 30px auto 0;
+}
+.main .title{
+	width: 100%;
+	height: 35px;
+	text-indent: 30px;
+	font-size: 16px;
+	background: #eee;
+	color: #555;
+	line-height: 35px;
+	margin-bottom: 20px;
+}
+.main .aside{
+	width: 200px;
+	height: 500px;
+	background: #f1f1f1;
+	float: left;
+}
+.main .aside dl{
+	width: 100%;
+}
+.main .aside dl dt{
+	margin-bottom: 10px;
+	width: 160px;
+	padding: 0 20px;
+	height: 30px;
+	font-size: 20px;
+	background: #ccc;
+	color: #fff;
+}
+.main .aside dl:last-of-type dt{
+	margin-top: 10px;
+}
+.main .aside dl dd ul li{
+	margin-top: 5px;
+	width: 100%;
+	height: 26px;
+	font-size: 16px;
+	text-indent: 20px;
+}
+.main .aside dl dd ul li a{
+	color: #333;
+}
+.main .aside dl dd ul li:hover{
+	background: #fff;
+}
+
+.main .content{
+	width: 780px;
+	float: left;
+	margin-left: 20px;
+}
+.main .content .nav{
+	width: 100%;
+	height: 30px;
+	background: #999;
+}
+.main .content .nav ul li{
+	float: left;
+	height: 30px;
+	font-size: 14px;
+	line-height: 30px;
+	color: #fff;
+}
+.main .content .nav ul .sort{
+	width: 150px;
+	margin-left: 20px;
+}
+.main .content .nav ul .seek{
+	width: 300px;
+	
+}
+.main .content .nav ul .add{
+	width: 80px;
+	float: right;
+}
+.main .content .nav ul .search{
+	width: 180px;
+	height: 20px;
+	border: 0;
+}
+.main .content .nav ul .btn{
+	color: #999;
+	display: inline-block;
+	width: 50px;
+	height: 20px;
+	margin-left: 20px;
+	line-height: 20px;
+	background: #f1f1f1;
+	text-align: center;
+}
+.main .content .article{
+	width: 100%;
+	height: 460px;
+	margin-top: 10px;
+	background: #f1f1f1;
+}
+.main .content .article table{
+	width: 100%;
+	height: 30px;
+	font-size: 16px;
+	background: #ccc;
+	color: #fff;
+	text-align: center;
+}

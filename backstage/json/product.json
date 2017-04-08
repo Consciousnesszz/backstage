@@ -1,0 +1,14 @@
+[
+	{"id": 1, "name": "飞机", "statu": "vip"},
+	{"id": 2, "name": "跑车", "statu": "normal"},
+	{"id": 3, "name": "游艇", "statu": "vip"},
+	{"id": 4, "name": "赛马", "statu": "vip"},
+	{"id": 5, "name": "别墅", "statu": "normal"},
+	{"id": 6, "name": "香水", "statu": "vip"},
+	{"id": 7, "name": "高尔夫球场", "statu": "vip"},
+	{"id": 8, "name": "游泳池", "statu": "vip"},
+	{"id": 9, "name": "办公楼", "statu": "normal"},
+	{"id": 10, "name": "交易中心", "statu": "vip"},
+	{"id": 11, "name": "直升机", "statu": "vip"},
+	{"id": 12, "name": "坦克", "statu": "vip"}
+]
