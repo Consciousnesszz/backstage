@@ -1,6 +1,13 @@
 <div class="nav" ng-controller='navCtrl'>
+	<h3 class="title">当前查询项目：{{ lookingFor }}</h3>
 	<ul>
-		<li class="sort"><span>排序方式：</span><select class="down"></select></li>
+		<li class="sort">
+			<span>排序方式：</span>
+			<select ng-change="onChange()" ng-model="down" autocomplete="off">
+				<option selected = "selected">正序</option>
+				<option>反序</option>
+			</select>
+		</li>
 		<li class="seek"><input type="text" class="search"><a href="javascript:void(0);" class="btn">搜索</a></li>
 		<li class="add"><a href="javascript:void(0);" class="btn">+ 添加</a></li>
 	</ul>

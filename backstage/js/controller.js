@@ -1,7 +1,7 @@
-	/*---------login module---------*/
+	/*---------controller module---------*/
 var controller = angular.module('controllerModule', ['ngCookies', 'serviceModule']);
-controller.controller('loginCtrl', function($scope, $http, $cookies, userService){
 
+controller.controller('loginCtrl', function($scope, $http, $cookies, userService){
 	var username, password, keep;
 	var oldUser = $cookies.getObject('user');
 	if (oldUser) {
@@ -52,18 +52,81 @@ controller.controller('loginCtrl', function($scope, $http, $cookies, userService
 	}
 });
 
-controller.controller('navCtrl', function($scope){
-
+controller.controller('navCtrl', function($scope, $rootScope, $location, navService){
+	$scope.lookingFor = navService.lookingFor();
+	$('.seek .btn').click(function(){
+		var target = $(".seek .search").val(),
+			listItem = $(".list div");
+		for(var i = 0, len = listItem.length; i < len; i++){
+			$(listItem[i]).css("background", "#f1f1f1");
+			if ($(listItem[i]).text() == target) {
+				$(listItem[i]).css("background", "#ff0");
+				continue;
+			}
+		}
+	})
+	$rootScope.onChange = function(){
+		var statu = $location.path();
+		if (statu.indexOf("lient") > 0) {
+			$rootScope.clients.reverse();
+		}else{
+			$rootScope.products.reverse();
+		}
+	}
 });
 
-controller.controller('asideCtrl', function($scope){
-
+controller.controller('asideCtrl', function($scope, $cookies){
+	var username = $cookies.getObject('user').username;
+	$scope.username = username;
 });
 
-controller.controller('clientCtrl', function($scope){
-
+controller.controller('clientCtrl', function($scope, $rootScope, $cookies, $location, clientService){
+	clientService.clientsInfo().then(function(data){
+		$rootScope.clients = data;
+	});
+	$scope.goDetail = function(){
+		var id = $(this)[0].data.id;
+		$cookies.put('page', "client_" + id);
+		$location.path('/detail').replace();
+	}
+	$scope.delete = function(index){
+		$rootScope.clients.splice(index,1);
+	}
 });
 
-controller.controller('productCtrl', function($scope){
+controller.controller('productCtrl', function($scope, $rootScope, $cookies, $location, productService){
+	productService.productsInfo().then(function(data){
+		$rootScope.products = data;
+	});
+	$scope.goDetail = function(){
+		var id = $(this)[0].data.id;
+		$cookies.put('page', "product_" + id);
+		$location.path('/detail').replace();
+	}
+	$scope.delete = function(index){
+		$rootScope.products.splice(index,1);
+	}
+});
 
+controller.controller('detailCtrl', function($scope, detailService){
+	detailService.page().then(function(data){
+		if(data[0].phone){
+			$scope.page = {
+				id : "编号： " + data[0].id,
+				name : "用户名： " + data[0].name,
+				statu : "状态： " + data[0].statu,
+	            other : "电话： " + data[0].phone,
+	            amount : ""
+			}
+		}else{
+			$scope.page = {
+				id : "编号： " + data[0].id,
+				name : "商品名： " + data[0].name,
+				statu : "状态： " + data[0].statu,
+	            other : "产地： " + data[0].addr,
+	            amount : "数量： " + data[0].amount,
+			}
+		}
+		
+	});
 });
