@@ -242,6 +242,7 @@ img{
 .main .content .detail p{
 	margin: 8px 10px;
 	font-size: 18px;
+<<<<<<< HEAD
 }
 
 /*-------------window------------*/
@@ -279,4 +280,6 @@ img{
 	margin-left: 80px;
 	background: #c00;
 	color: #fff;
+=======
+>>>>>>> a07c057f168d5d95bec0ecf656b4fbd35ccebd54
 }
