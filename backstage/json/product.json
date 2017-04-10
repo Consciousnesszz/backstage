@@ -1,14 +1,14 @@
 [
-	{"id": 1, "name": "飞机", "statu": "vip"},
-	{"id": 2, "name": "跑车", "statu": "normal"},
-	{"id": 3, "name": "游艇", "statu": "vip"},
-	{"id": 4, "name": "赛马", "statu": "vip"},
-	{"id": 5, "name": "别墅", "statu": "normal"},
-	{"id": 6, "name": "香水", "statu": "vip"},
-	{"id": 7, "name": "高尔夫球场", "statu": "vip"},
-	{"id": 8, "name": "游泳池", "statu": "vip"},
-	{"id": 9, "name": "办公楼", "statu": "normal"},
-	{"id": 10, "name": "交易中心", "statu": "vip"},
-	{"id": 11, "name": "直升机", "statu": "vip"},
-	{"id": 12, "name": "坦克", "statu": "vip"}
+	{"id": 1, "name": "飞机", "statu": "sale", "amount": "10"},
+	{"id": 2, "name": "跑车", "statu": "under", "amount": "20"},
+	{"id": 3, "name": "游艇", "statu": "sale", "amount": "8"},
+	{"id": 4, "name": "赛马", "statu": "sale", "amount": "6"},
+	{"id": 5, "name": "别墅", "statu": "under", "amount": "7"},
+	{"id": 6, "name": "香水", "statu": "sale", "amount": "7"},
+	{"id": 7, "name": "高尔夫球场", "statu": "sale", "amount": "17"},
+	{"id": 8, "name": "游泳池", "statu": "under", "amount": "37"},
+	{"id": 9, "name": "办公楼", "statu": "under", "amount": "8"},
+	{"id": 10, "name": "交易中心", "statu": "under", "amount": "12"},
+	{"id": 11, "name": "直升机", "statu": "under", "amount": "7"},
+	{"id": 12, "name": "坦克", "statu": "under", "amount": "5"}
 ]

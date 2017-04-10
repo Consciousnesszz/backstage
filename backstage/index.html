@@ -9,14 +9,24 @@
 	<div ui-view="login">
 	</div>
 	<div class="main">
-		<div class="title">欢迎你！<span class="username"></span></div>
 		<div ui-view="aside"></div>
 		<div class="content">
 			<div ui-view="nav"></div>
 			<div ui-view="article"></div>
 		</div>
 	</div>
-
+	<div class="window wadd" ng-controller="waddCtrl">
+		<input type="text" placeholder="名称" class="addName"><br>
+		<input type="text" placeholder="状态" class="addStatu"><br>
+		<a href="javascript:void(0);" ng-click="add()">添加</a>
+		<a href="javascript:void(0);" class="cancel">取消</a>
+	</div>
+	<div class="window wchange" ng-controller="wchangeCtrl">
+		<input type="text" placeholder="名称" class="changeName"><br>
+		<input type="text" placeholder="状态" class="changeStatu"><br>
+		<a href="javascript:void(0);" ng-click="change()">修改</a>
+		<a href="javascript:void(0);" class="cancel">取消</a>
+	</div>
     
 	
 	<script type="text/javascript" src="/lib/jquery-3.1.1.js"></script>

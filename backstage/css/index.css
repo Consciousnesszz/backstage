@@ -91,24 +91,29 @@ img{
 	width: 1000px;
 	margin: 30px auto 0;
 }
-.main .title{
-	width: 100%;
-	height: 35px;
-	text-indent: 30px;
-	font-size: 16px;
-	background: #eee;
-	color: #555;
-	line-height: 35px;
-	margin-bottom: 20px;
-}
 .main .aside{
 	width: 200px;
 	height: 500px;
-	background: #f1f1f1;
 	float: left;
+}
+.main .aside h3{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-indent: 20px;
+	background: #999;
+	color: #fff;
+	font-size: 22px;
+	margin-bottom: 10px;
+}
+.main .aside .option{
+	width: 100%;
+	height: 440px;
+	background: #f1f1f1;
 }
 .main .aside dl{
 	width: 100%;
+	background: #f1f1f1;
 }
 .main .aside dl dt{
 	margin-bottom: 10px;
@@ -142,6 +147,19 @@ img{
 	margin-left: 20px;
 }
 .main .content .nav{
+	width: 100%;
+	height: 90px;
+}
+.main .content .nav h3{
+	width: 100%;
+	height: 50px;
+	margin-bottom: 10px;
+	font-size: 20px;
+	background: #f1f1f1;
+	text-indent: 30px;
+	line-height: 50px;
+}
+.main .content .nav ul{
 	width: 100%;
 	height: 30px;
 	background: #999;
@@ -180,10 +198,12 @@ img{
 	background: #f1f1f1;
 	text-align: center;
 }
+.main .content .nav ul .btn:hover{
+	color: #333;
+}
 .main .content .article{
 	width: 100%;
-	height: 460px;
-	margin-top: 10px;
+	height: 410px;
 	background: #f1f1f1;
 }
 .main .content .article table{
@@ -193,4 +213,70 @@ img{
 	background: #ccc;
 	color: #fff;
 	text-align: center;
+}
+.main .content .article .list{
+	width: 100%;
+}
+.main .content .article .list > div{
+	width: 25%;
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	float: left;
+	text-align: center;
+}
+.main .content .article .list > div a{
+	color: #333;
+}
+.main .content .article .list > div a:hover{
+	text-decoration: underline;
+}
+
+.main .content .detail{
+	width: 100%;
+	height: 400px;
+	background: #f1f1f1;
+	font-size: 16px;
+	text-indent: 20px;
+}
+.main .content .detail p{
+	margin: 8px 10px;
+	font-size: 18px;
+}
+
+/*-------------window------------*/
+.window{
+	width: 300px;
+	height: 150px;
+	background: #fff;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	margin: 200px auto;
+	display: none;
+}
+.window input{
+	width: 300px;
+	height: 30px;
+	line-height: 30px;
+	text-indent: 10px;
+	font-size: 16px;
+	margin: 10px 0 0;
+}
+.window a{
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	margin: 10px 0 0;
+	background: #ccc;
+	font-size: 16px;
+	line-height: 30px;
+	text-align: center;
+	color: #fff;
+}
+.window .cancel{
+	margin-left: 80px;
+	background: #c00;
+	color: #fff;
 }

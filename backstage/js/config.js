@@ -25,7 +25,33 @@ app.config(function($stateProvider, $urlRouterProvider){
   				templateUrl: '/html/client.html'
   			}
   		}
-	}).state("allProduct", {
+	}).state("VIPClient", {
+      url: '/VIPClient',
+      views:{
+        'nav':{
+          templateUrl: '/html/nav.html'
+        },
+        'aside':{
+          templateUrl: '/html/aside.html'
+        },
+        'article':{
+          templateUrl: '/html/client.html'
+        }
+      }
+  }).state("normalClient", {
+      url: '/normalClient',
+      views:{
+        'nav':{
+          templateUrl: '/html/nav.html'
+        },
+        'aside':{
+          templateUrl: '/html/aside.html'
+        },
+        'article':{
+          templateUrl: '/html/client.html'
+        }
+      }
+  }).state("allProduct", {
   		url: '/allProduct',
   		views:{
   			'nav':{
@@ -38,5 +64,44 @@ app.config(function($stateProvider, $urlRouterProvider){
   				templateUrl: '/html/product.html'
   			}
   		}
-	});;
+	}).state("saleProduct", {
+      url: '/saleProduct',
+      views:{
+        'nav':{
+          templateUrl: '/html/nav.html'
+        },
+        'aside':{
+          templateUrl: '/html/aside.html'
+        },
+        'article':{
+          templateUrl: '/html/product.html'
+        }
+      }
+  }).state("underProduct", {
+      url: '/underProduct',
+      views:{
+        'nav':{
+          templateUrl: '/html/nav.html'
+        },
+        'aside':{
+          templateUrl: '/html/aside.html'
+        },
+        'article':{
+          templateUrl: '/html/product.html'
+        }
+      }
+  }).state("detail", {
+      url: '/detail',
+      views:{
+        'nav':{
+          templateUrl: '/html/nav.html'
+        },
+        'aside':{
+          templateUrl: '/html/aside.html'
+        },
+        'article':{
+          templateUrl: '/html/detail.html'
+        }
+      }
+  });
 })
