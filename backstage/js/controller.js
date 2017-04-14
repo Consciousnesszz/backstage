@@ -73,7 +73,7 @@ controller.controller('navCtrl', function($scope, $rootScope, $location, navServ
 			$rootScope.products.reverse();
 		}
 	}
-<<<<<<< HEAD
+
 	$(".add .btn").click(function(){
 		$(".wadd").css("display", "block");
 	})
@@ -153,11 +153,8 @@ controller.controller('detailCtrl', function($scope, detailService){
 	});
 });
 
-controller.controller('waddCtrl', function($scope, $rootScope, detailService){
-=======
-});
 
-controller.controller('asideCtrl', function($scope, $cookies){
+/*controller.controller('asideCtrl', function($scope, $cookies){
 	var username = $cookies.getObject('user').username;
 	$scope.username = username;
 });
@@ -189,7 +186,6 @@ controller.controller('productCtrl', function($scope, $rootScope, $cookies, $loc
 		$rootScope.products.splice(index,1);
 	}
 });
->>>>>>> a07c057f168d5d95bec0ecf656b4fbd35ccebd54
 
 controller.controller('detailCtrl', function($scope, detailService){
 	detailService.page().then(function(data){
@@ -212,7 +208,7 @@ controller.controller('detailCtrl', function($scope, detailService){
 		}
 		
 	});
-});
+});*/
 
 controller.controller('wchangeCtrl', function($scope, $rootScope, detailService){
 	$scope.change = function(){
